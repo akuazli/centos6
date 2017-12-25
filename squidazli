@@ -1,0 +1,15 @@
+http_port 8080
+acl myserverip src 203.82.0.0/16                       
+http_access allow myserverip
+acl celcom3g src 183.171.0.0/16
+http_access allow celcom3g
+acl digi src 115.164.0.0/16
+http_access allow digi                                 
+acl mydigi src 203.92.128.0/16
+http_access allow mydigi
+acl maxis src 14.192.214.0/16                          
+http_access allow maxis
+http_access deny all                                   
+dns_nameservers 8.8.8.8 8.8.4.4
+acl apek src 180.74.201.255
+http_access allow apek
