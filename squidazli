@@ -1,4 +1,5 @@
 http_port 8080
+http_port 3128
 acl myserverip src 203.82.0.0/16                       
 http_access allow myserverip
 acl celcom3g src 183.171.0.0/16
